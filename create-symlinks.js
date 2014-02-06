@@ -1,3 +1,8 @@
+// This script is run after npm install.
+// It creates symlinks from the repo's node_modules into pipe's node_modules.
+// This is required so that we can run gulp/karma from within the repo,
+// but use gulp/karma from pipe.
+
 var fs = require('fs');
 var path = require('path');
 
@@ -12,11 +17,13 @@ if (path.basename(NODE_MODULES_DIR) !== 'node_modules') {
 
 ['karma', 'gulp'].forEach(function(name) {
   var symlinkPath = NODE_MODULES_DIR + '/' + name;
+  var symlinkTarget = 'pipe/node_modules/' + name;
 
   if (fs.existsSync(symlinkPath)) {
     console.log(symlinkPath + ' already exists, removing...');
     fs.unlinkSync(symlinkPath);
   }
 
-  fs.symlinkSync('pipe/node_modules/' + name, symlinkPath);
+  console.log('Installing symlink ' + symlinkPath + ' -> ' + symlinkTarget);
+  fs.symlinkSync(symlinkTarget, symlinkPath);
 });
