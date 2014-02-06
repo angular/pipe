@@ -1,0 +1,31 @@
+{
+  "name": "pipe",
+  "version": "0.0.0",
+  "description": "This is not a pipe.",
+  "main": "",
+  "scripts": {
+    "postinstall": "node create-symlinks.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/angular/pipe.git"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/angular/pipe/issues"
+  },
+  "homepage": "https://github.com/angular/pipe",
+  "dependencies": {
+    "gulp": "~3.5.1",
+    "gulp-connect": "~0.1.6",
+    "gulp-traceur": "git://github.com/vojtajina/gulp-traceur#update-traceur",
+    "karma": "0.11.14",
+    "karma-jasmine": "~0.1.5",
+    "karma-requirejs": "~0.2.1",
+    "karma-chrome-launcher": "~0.1.2",
+    "karma-traceur-preprocessor": "git://github.com/karma-runner/karma-traceur-preprocessor.git#error-callback",
+    "requirejs": "~2.1.9",
+    "karma-sauce-launcher": "~0.2.0"
+  }
+}

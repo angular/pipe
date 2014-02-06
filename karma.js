@@ -61,7 +61,8 @@ module.exports = function(config) {
     config.logLevel = config.LOG_DEBUG;
     config.sauceLabs.build = 'TRAVIS #' + process.env.TRAVIS_BUILD_NUMBER + ' (' + process.env.TRAVIS_BUILD_ID + ')';
     config.sauceLabs.tunnelIdentifier = process.env.TRAVIS_JOB_NUMBER;
-    config.sauceLabs.acessKey = process.env.SAUCE_ACCESS_KEY.split('').reverse().join('');
+
+    process.env.SAUCE_ACCESS_KEY = process.env.SAUCE_ACCESS_KEY.split('').reverse().join('');
 
     // TODO(vojta): remove once SauceLabs supports websockets.
     // This speeds up the capturing a bit, as browsers don't even try to use websocket.
