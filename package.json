@@ -24,7 +24,7 @@
     "karma-jasmine": "~0.1.5",
     "karma-requirejs": "~0.2.1",
     "karma-chrome-launcher": "~0.1.2",
-    "karma-traceur-preprocessor": "git://github.com/karma-runner/karma-traceur-preprocessor.git#error-callback",
+    "karma-traceur-preprocessor": "~0.2.0",
     "requirejs": "~2.1.9",
     "karma-sauce-launcher": "~0.2.0",
     "lodash": "~2.4.1"
