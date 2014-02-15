@@ -21,7 +21,7 @@
     "gulp-connect": "~0.1.6",
     "gulp-traceur": "git://github.com/vojtajina/gulp-traceur#update-traceur",
     "karma": "0.11.14",
-    "karma-jasmine": "~0.1.5",
+    "karma-jasmine": "~0.2.1",
     "karma-requirejs": "~0.2.1",
     "karma-chrome-launcher": "~0.1.2",
     "karma-traceur-preprocessor": "~0.2.0",
