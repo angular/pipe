@@ -8,6 +8,8 @@ module.exports = function(config) {
       options: {
         modules: 'amd',
         types: true,
+        typeAssertions: true,
+        typeAssertionModule: 'assert',
         annotations: true,
         sourceMap: true
       }
