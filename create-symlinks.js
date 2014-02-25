@@ -21,7 +21,12 @@ if (path.basename(NODE_MODULES_DIR) !== 'node_modules') {
 
   if (fs.existsSync(symlinkPath)) {
     console.log(symlinkPath + ' already exists, removing...');
-    fs.unlinkSync(symlinkPath);
+    try {
+      fs.unlinkSync(symlinkPath);
+    } catch (e) {
+      console.log('Cannot remove existing symlink!');
+      process.exit(0);
+    }
   }
 
   console.log('Installing symlink ' + symlinkPath + ' -> ' + symlinkTarget);
