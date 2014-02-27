@@ -27,6 +27,7 @@
     "karma-traceur-preprocessor": "~0.2.0",
     "requirejs": "~2.1.9",
     "karma-sauce-launcher": "~0.2.0",
-    "lodash": "~2.4.1"
+    "lodash": "~2.4.1",
+    "rimraf": "~2.2.6"
   }
 }
