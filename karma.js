@@ -10,6 +10,11 @@ module.exports = function(config) {
         types: true,
         annotations: true,
         sourceMap: true
+        /**
+         * Someday blockBinding would be nice, but for now it compiles to nasty
+         * ES5 code (everything in a closure)
+         */
+        // blockBinding: true
       }
     },
 
