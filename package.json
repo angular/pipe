@@ -19,7 +19,7 @@
   "dependencies": {
     "gulp": "~3.5.1",
     "gulp-connect": "~0.1.6",
-    "gulp-traceur": "git://github.com/vojtajina/gulp-traceur#update-traceur",
+    "gulp-traceur": "git://github.com/vojtajina/gulp-traceur#traceur-assert",
     "karma": "0.11.14",
     "karma-jasmine": "~0.2.1",
     "karma-requirejs": "~0.2.1",
@@ -28,6 +28,7 @@
     "requirejs": "~2.1.9",
     "karma-sauce-launcher": "~0.2.0",
     "lodash": "~2.4.1",
-    "rimraf": "~2.2.6"
+    "rimraf": "~2.2.6",
+    "assert": "git://github.com/angular/assert#dist"
   }
 }
