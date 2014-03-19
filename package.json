@@ -19,7 +19,7 @@
   "dependencies": {
     "gulp": "~3.5.1",
     "gulp-connect": "~0.1.6",
-    "gulp-traceur": "~0.2.0",
+    "gulp-traceur": "vojtajina/gulp-traceur#traceur-latest",
     "karma": "0.11.14",
     "karma-jasmine": "~0.2.1",
     "karma-requirejs": "~0.2.1",
