@@ -3,9 +3,7 @@
   "version": "0.0.0",
   "description": "This is not a pipe.",
   "main": "",
-  "scripts": {
-    "postinstall": "node create-symlinks.js"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git://github.com/angular/pipe.git"
@@ -17,18 +15,6 @@
   },
   "homepage": "https://github.com/angular/pipe",
   "dependencies": {
-    "gulp": "~3.5.1",
-    "gulp-connect": "~0.1.6",
-    "gulp-traceur": "vojtajina/gulp-traceur#traceur-latest",
-    "karma": "0.11.14",
-    "karma-jasmine": "~0.2.1",
-    "karma-requirejs": "~0.2.1",
-    "karma-chrome-launcher": "~0.1.2",
-    "karma-traceur-preprocessor": "~0.2.1",
-    "requirejs": "~2.1.9",
-    "karma-sauce-launcher": "~0.2.0",
-    "lodash": "~2.4.1",
-    "rimraf": "~2.2.6",
-    "assert": "git://github.com/angular/assert#dist"
+    "lodash": "~2.4.1"
   }
 }
