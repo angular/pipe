@@ -9,7 +9,7 @@ module.exports = function(config) {
         modules: 'amd',
         types: true,
         typeAssertions: true,
-        typeAssertionModule: 'assert',
+        typeAssertionModule: 'rtts-assert',
         annotations: true,
         sourceMap: true
         /**

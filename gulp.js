@@ -9,6 +9,6 @@ exports.traceur = function(options) {
     annotations: true,
     typeAssertions: true,
     typeAssertions: true,
-    typeAssertionModule: 'assert'
+    typeAssertionModule: 'rtts-assert'
   });
 };
