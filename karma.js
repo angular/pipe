@@ -25,6 +25,7 @@ module.exports = function(config) {
       testName: 'AngularJS v2 - default',
       startConnect: true,
       options: {
+        'avoid-proxy': true,
         'selenium-version': '2.37.0'
       }
     },
@@ -73,13 +74,7 @@ module.exports = function(config) {
     },
 
 
-    browsers: ['Chrome'],
-
-
-    plugins: [
-      'karma-*'
-      // require('karma-sauce-launcher')
-    ]
+    browsers: ['Chrome']
   });
 
   if (process.env.TRAVIS) {
