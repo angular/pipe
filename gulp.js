@@ -9,7 +9,6 @@ exports.traceur = function(options) {
     types: true,
     annotations: true,
     typeAssertions: true,
-    typeAssertions: true,
     typeAssertionModule: 'assert'
   }));
 };
